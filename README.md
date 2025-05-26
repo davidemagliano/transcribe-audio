@@ -75,3 +75,31 @@ transcribe-audio/
 ├── test_files/        # Sample audio files for testing
 └── docs/              # Additional documentation
 ```
+
+## 🧪 Running Tests
+
+To run the test suite:
+
+```bash
+pytest
+```
+
+Make sure you have all dependencies installed and your environment variables set up as described above.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+## 📫 Contact
+
+For questions, suggestions, or support, please open an issue or contact: [davide.magliano98@gmail.com](mailto:davide.magliano98@gmail.com)
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

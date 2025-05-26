@@ -63,7 +63,7 @@ class AppConfig:
         
         # API Configuration
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
-        self.summary_model = os.getenv("SUMMARY_MODEL", "gpt-4o-mini")
+        self.summary_model = os.getenv("SUMMARY_MODEL", "gpt-4.1-mini")
         
         # Debug settings
         self.debug = os.getenv("DEBUG", "false").lower() == "true"

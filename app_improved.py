@@ -363,16 +363,14 @@ if st.session_state.edited_transcript:
                     language=language_name
                 )
                 
-                response = client.chat.completions.create(
+                response = client.responses.create(
                     model=config.summary_model,
-                    messages=[
-                        {"role": "system", "content": formatted_prompt},
-                        {"role": "user", "content": "Please generate the meeting notes and key insights based on the provided transcript and context."}
-                    ],
+                    instructions=formatted_prompt,
+                    input=st.session_state.edited_transcript,
                     temperature=0.5,
                 )
                 
-                st.session_state.summary = response.choices[0].message.content
+                st.session_state.summary = response.output_text
                 st.success("✅ Summary generated successfully!")
                 logger.info("Summary generated successfully")
                 
